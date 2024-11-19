@@ -5,11 +5,15 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "nav-back":
-          "linear-gradient(157.48deg, rgba(77, 77, 77, 0.045) 0%, rgba(140, 140, 140, 0.04) 99.6%)",
+        "nav-back":"linear-gradient(157.48deg, rgba(77, 77, 77, 0.045) 0%, rgba(140, 140, 140, 0.04) 99.6%)",
+        "primary-orange":"linear-gradient(126.89deg, #DB2777 -67.19%, #F97316 203.32%)",
+
       },
       backdropBlur: {
         "100px": "100px",
+      },
+      fontFamily: {
+        lato: ['Lato', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -60,5 +64,7 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate")
+  ],
 };
